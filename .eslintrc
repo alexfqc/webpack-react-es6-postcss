@@ -1,0 +1,31 @@
+{
+  "parserOptions": {
+    "ecmaVersion": 6
+  },
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  parser: "babel-eslint",
+  "plugins": ["prettier", "react", "import"],
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      {
+        "singleQuote": true,
+        "semi": true
+      }
+    ]
+  },
+  "extends": ["eslint:recommended", "prettier", "plugin:react/recommended", "plugin:import/errors"],
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [
+          ".js",
+          ".jsx"
+        ]
+      }
+    }
+  }
+}
